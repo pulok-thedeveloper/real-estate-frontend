@@ -541,55 +541,55 @@ nav a:hover {
 
 /* Features Properties */
 
-.featured .propertires {
+.featured .properties {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
-.featured .propertires .item {
+.properties .item {
   border-radius: 16px;
   padding: 12px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.featured .propertires .item:hover {
+.properties .item:hover {
   box-shadow: 5px 10px 20px 5px rgba(var(--primaryrgb), 0.1);
 }
 
-.featured .propertires .item .img-wrapper {
+.properties .item .img-wrapper {
   width: 100%;
   height: 220px;
 }
-.featured .propertires .item .img-wrapper img {
+.properties .item .img-wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
-.featured .propertires .item .title {
+.properties .item .title {
   margin-top: 20px;
   font-size: 1rem;
 }
 
-.featured .propertires .item .location {
+.properties .item .location {
   margin: 8px 0;
   font-size: 0.8rem;
 }
 
-.featured .propertires .item .footer {
+.properties .item .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.featured .propertires .item .price {
+.properties .item .price {
   margin: 10px 0;
   font-size: 1.2rem;
 }
 
-.featured .propertires .item .details-btn {
+.properties .item .details-btn {
   display: inline-block;
   color: var(--primary);
   border: 1px solid var(--primary);
@@ -599,7 +599,7 @@ nav a:hover {
   transition: all 0.3s;
 }
 
-.featured .propertires .item .details-btn:hover {
+.properties .item .details-btn:hover {
   background-color: var(--primary);
   color: var(--white);
 }
@@ -994,7 +994,7 @@ footer .logo {
   html {
     font-size: 90%;
   }
-  .featured .propertires {
+  .featured .properties {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -1003,7 +1003,7 @@ footer .logo {
   html {
     font-size: 85%;
   }
-  .featured .propertires {
+  .featured .properties {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1081,7 +1081,7 @@ footer .logo {
     font-size: 2.2rem;
   }
 
-  .featured .propertires {
+  .featured .properties {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 

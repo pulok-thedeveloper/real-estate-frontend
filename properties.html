@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties - Real Estate</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="properties.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9e475a741b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div>
+        <a href="home.html">
+          <img
+            class="logo"
+            alt="logo"
+            src="./assets/logo-removebg-preview.png"
+          />
+        </a>
+      </div>
+      <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="">Blog</a>
+      </nav>
+      <div class="nav-toggle">
+        <img width="20" src="assets/menu.png" alt="" />
+      </div>
+    </header>
+
+    <div id="properties">
+      <div class="hero">
+        <img src="assets/serviceBG.jpg" alt="" />
+        <div class="wrapper">
+          <h1>Properties</h1>
+          <div class="breadcrumb">
+            <a href="home.html">Home</a>
+            <span><i class="fa-solid fa-angles-right"></i></span>
+            <a href="about.html">Properties</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search section -->
+
+      <section class="property-search">
+        <div class="search-tabs">
+          <button class="item active plus-jakarta">All Status</button>
+          <button class="item plus-jakarta">For Rent</button>
+          <button class="item plus-jakarta">For Sell</button>
+        </div>
+
+        <form class="search-form" action="">
+          <div class="searchBar">
+            <label for="">Location</label>
+            <select>
+              <option selected disabled>All Cities</option>
+              <option>Los Angeles</option>
+              <option>Miami</option>
+              <option>New York</option>
+              <option>Chicago</option>
+            </select>
+          </div>
+          <div class="searchBar">
+            <label for="">Select Type</label>
+            <select>
+              <option selected disabled>Select type</option>
+              <option>Apartment</option>
+              <option>Office</option>
+              <option>Shop</option>
+              <option>Villa</option>
+              <option>Studio</option>
+            </select>
+          </div>
+          <div class="searchBar">
+            <label for="">Select Size</label>
+            <select>
+              <option selected disabled>Select Size</option>
+              <option>Apartment</option>
+              <option>Office</option>
+              <option>Shop</option>
+              <option>Villa</option>
+              <option>Studio</option>
+            </select>
+          </div>
+          <div class="searchBar">
+            <label for="">Budget</label>
+            <input placeholder="Max. Price" type="number" />
+          </div>
+          <div class="searchBtn">
+            <input type="button" value="Search Property" />
+          </div>
+        </form>
+      </section>
+
+      <section class="listings">
+        <div class="main">
+          <div class="top">
+            <div class="property-count">8 Properties</div>
+            <div class="sort-select">
+              <span>Sort by:</span
+              ><select name="sort_property" id="sort_property">
+                <option value="default">Default Order</option>
+                <option value="lth">Price - Low to High</option>
+                <option value="htl">Price - High to Low</option>
+                <option value="OtN">Date - Old to New</option>
+                <option value="NtO">Date - New to Old</option>
+                <option value="asc">Title - A to Z</option>
+                <option value="desc">Title - Z to A</option>
+              </select>
+            </div>
+          </div>
+          <div class="properties">
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img1.jpg" alt="" />
+              </div>
+              <h3 class="title">Light And Modern Apartment</h3>
+              <p class="location">Grand Canyon National Park, Arizona</p>
+              <div class="footer">
+                <p class="price">$52,500.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img2.jpg" alt="" />
+              </div>
+              <h3 class="title">New Apartment Nice View</h3>
+              <p class="location">Times Square, New York City, New York</p>
+              <div class="footer">
+                <p class="price">$31,700.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img3.jpg" alt="" />
+              </div>
+              <h3 class="title">Green View Design</h3>
+              <p class="location">
+                Yellowstone National Park, Wyoming, Montana, Idaho
+              </p>
+              <div class="footer">
+                <p class="price">$68,000.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img4.jpg" alt="" />
+              </div>
+              <h3 class="title">Amazing Home For Family</h3>
+              <p class="location">French Quarter, New Orleans, Louisiana</p>
+              <div class="footer">
+                <p class="price">$47,900.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img5.jpg" alt="" />
+              </div>
+              <h3 class="title">New Apartment Nice View</h3>
+              <p class="location">
+                Golden Gate Bridge, San Francisco, California
+              </p>
+              <div class="footer">
+                <p class="price">$36,500.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img6.jpg" alt="" />
+              </div>
+              <h3 class="title">Light And Modern Apartment</h3>
+              <p class="location">The White House, Washington D.C.</p>
+              <div class="footer">
+                <p class="price">$71,000.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img1.jpg" alt="" />
+              </div>
+              <h3 class="title">New Apartment Nice View</h3>
+              <p class="location">Rocky Mountain National Park, Colorado</p>
+              <div class="footer">
+                <p class="price">$29,500.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="assets/img2.jpg" alt="" />
+              </div>
+              <h3 class="title">Green View Design</h3>
+              <p class="location">Glacier National Park, Montana</p>
+              <div class="footer">
+                <p class="price">$39,200.00</p>
+                <a class="details-btn" href="#">View details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="featured_listing">
+            <h3>Featured Listing</h3>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper properties">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img1.jpg" alt="" />
+                    </div>
+                    <h3 class="title">Light And Modern Apartment</h3>
+                    <p class="location">Grand Canyon National Park, Arizona</p>
+                    <div class="footer">
+                      <p class="price">$52,500.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img2.jpg" alt="" />
+                    </div>
+                    <h3 class="title">New Apartment Nice View</h3>
+                    <p class="location">
+                      Times Square, New York City, New York
+                    </p>
+                    <div class="footer">
+                      <p class="price">$31,700.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img3.jpg" alt="" />
+                    </div>
+                    <h3 class="title">Green View Design</h3>
+                    <p class="location">
+                      Yellowstone National Park, Wyoming, Montana, Idaho
+                    </p>
+                    <div class="footer">
+                      <p class="price">$68,000.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img4.jpg" alt="" />
+                    </div>
+                    <h3 class="title">Amazing Home For Family</h3>
+                    <p class="location">
+                      French Quarter, New Orleans, Louisiana
+                    </p>
+                    <div class="footer">
+                      <p class="price">$47,900.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img5.jpg" alt="" />
+                    </div>
+                    <h3 class="title">New Apartment Nice View</h3>
+                    <p class="location">
+                      Golden Gate Bridge, San Francisco, California
+                    </p>
+                    <div class="footer">
+                      <p class="price">$36,500.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img6.jpg" alt="" />
+                    </div>
+                    <h3 class="title">Light And Modern Apartment</h3>
+                    <p class="location">The White House, Washington D.C.</p>
+                    <div class="footer">
+                      <p class="price">$71,000.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img1.jpg" alt="" />
+                    </div>
+                    <h3 class="title">New Apartment Nice View</h3>
+                    <p class="location">
+                      Rocky Mountain National Park, Colorado
+                    </p>
+                    <div class="footer">
+                      <p class="price">$29,500.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="img-wrapper">
+                      <img src="assets/img2.jpg" alt="" />
+                    </div>
+                    <h3 class="title">Green View Design</h3>
+                    <p class="location">Glacier National Park, Montana</p>
+                    <div class="footer">
+                      <p class="price">$39,200.00</p>
+                      <a class="details-btn" href="#">View details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="property_type">
+            <h3>Property Types</h3>
+            <ul>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Apartment</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Office</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Shop</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Villa</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Studio</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cities">
+            <h3>Cities</h3>
+            <ul>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Los Angeles</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Miami</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>New York</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span>Chicago</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+      <div>
+        <div class="cta">
+          <h3>Subscribe our newsletter to get update.</h3>
+
+          <a href="#">
+            <span>Sign Up Now</span>
+
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+        <div class="container">
+          <div>
+            <p>Quick Link</p>
+
+            <div class="links">
+              <a href="#">Home</a>
+              <a href="#">Who We Are</a>
+              <a href="#">Our Philosophy</a>
+            </div>
+          </div>
+
+          <div>
+            <p>Industries</p>
+
+            <div class="links">
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-500text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400"
+                >Retail & E-Commerce</a
+              >
+              <a href="#">Information Technology</a>
+              <a href="#">Finance & Insurance</a>
+            </div>
+          </div>
+
+          <div>
+            <p>Services</p>
+
+            <div class="links">
+              <a href="#">Translation</a>
+              <a href="#">Proofreading & Editing</a>
+              <a href="#">Content Creation</a>
+            </div>
+          </div>
+
+          <div>
+            <p>Contact Us</p>
+
+            <div class="links">
+              <a href="#">+880 768 473 4978</a>
+              <a href="#">info@realestate.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <a href="#">
+            <img
+              class="logo"
+              alt="logo"
+              src="./assets/logo-removebg-preview.png"
+            />
+          </a>
+
+          <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">
+            © Copyright 2024. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var testimonialSwiper = new Swiper(".featured_listing .mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>

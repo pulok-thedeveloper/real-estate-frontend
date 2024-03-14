@@ -1,0 +1,118 @@
+#about .hero {
+  position: relative;
+  padding: 0px 8%;
+  background-image: linear-gradient(
+    to right,
+    rgba(28, 29, 32, 0.7),
+    transparent
+  );
+}
+
+#about .hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#about .hero .wrapper {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: var(--white);
+}
+
+#about .hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#about .hero .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#about .hero .breadcrumb a {
+  color: var(--white);
+}
+
+#about .hero .breadcrumb i {
+  font-size: 0.8rem;
+}
+
+#about #intro {
+  margin-bottom: 80px;
+}
+
+#about #intro .sec-heading {
+  margin-bottom: 30px;
+}
+
+#about #intro p {
+  text-align: center;
+  padding: 0 20%;
+  line-height: 2;
+}
+
+#about #story {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+}
+
+#about #story img {
+  width: 100%;
+}
+
+#about #story .sec-heading {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#about #story p {
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+#about .members {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+#about .members .item {
+  cursor: pointer;
+}
+
+#about .members .item .picture {
+  height: 450px;
+}
+
+#about .members .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 5px rgba(var(--primaryrgb), 0.1),
+    5px 4px 6px -4px rgba(var(--primaryrgb), 0.1);
+}
+
+#about .members .item .info {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#about .members .item .info .role {
+  color: var(--primary);
+}
