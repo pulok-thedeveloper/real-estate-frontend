@@ -109,13 +109,13 @@
   padding: 1rem;
 }
 
-#properties .listings aside > div h3 {
+#properties .listings aside > div > h3 {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
-#properties .listings aside > div h3::before {
+#properties .listings aside > div > h3::before {
   position: absolute;
   content: "";
   width: 50px;

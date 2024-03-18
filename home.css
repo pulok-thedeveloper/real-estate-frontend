@@ -892,7 +892,7 @@ nav a:hover {
 .contact .wrapper .contact-form form textarea:focus {
   outline: none;
   border: 1px solid var(--primary);
-  box-shadow: 0 0 0 calc(3px + 1px) rgba(var(--primaryrgb), 0.2);
+  box-shadow: 0 0 0 4px rgba(var(--primaryrgb), 0.2);
 }
 
 .contact .wrapper .contact-form form textarea {

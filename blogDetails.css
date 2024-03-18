@@ -1,0 +1,114 @@
+#post section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  position: relative;
+}
+
+#post section .main {
+  grid-column: span 3 / span 4;
+}
+
+#post section .main .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#post section .main .author {
+  color: rgb(107 114 128);
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+#post section .main img {
+  width: 100%;
+}
+
+#post section .main .details {
+  margin-top: 20px;
+}
+
+#post section .main .details p{
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+#post section aside {
+  grid-column: span 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  height: max-content;
+}
+
+#post section aside > div {
+  background-color: var(--white);
+  padding: 2rem;
+}
+
+#post section aside > div h3:first-child {
+  padding: 1rem;
+}
+
+#post section aside > div > h3 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#post section aside > div > h3::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  bottom: -5px;
+}
+
+#post section aside .search-blog {
+  display: flex;
+}
+
+#post section aside .search-blog input {
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+#post section aside .search-blog .search-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 0;
+  padding: 0 1.2rem;
+  cursor: pointer;
+}
+
+#post section aside > div ul li {
+  padding: 20px;
+  border-bottom: 1px solid rgba(28, 29, 32, 0.2);
+}
+
+#post section aside > div ul li a {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+#post section aside > div ul li i {
+  font-size: 0.8rem;
+}
+
+#post section aside > div ul li a:hover {
+  color: var(--primary);
+}
