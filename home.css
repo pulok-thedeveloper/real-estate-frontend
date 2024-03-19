@@ -67,15 +67,50 @@ header .logo {
 nav {
   display: flex;
   gap: 16px;
+  height: 74px;
 }
 
-nav a {
+nav .navlink-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+nav .navlink-wrapper > a {
+  height: 100%;
   color: var(--black);
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-nav a:hover {
-  transform: scale(1.1);
+nav .navlink-wrapper > a:hover {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+nav .navlink-wrapper .dropdown {
+  position: absolute;
+  top: 102%;
+  right: 0;
+  background-color: var(--white);
+  border-radius: 5px;
+  min-width: 200px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: top;
+}
+
+nav .navlink-wrapper:hover .dropdown {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+nav .dropdown ul li a {
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid;
 }
 
 .nav-toggle {
@@ -196,7 +231,8 @@ nav a:hover {
   right: 20px;
   width: max-content;
   max-width: 30%;
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 10px;
   align-items: center;
 }
@@ -990,9 +1026,24 @@ footer .logo {
   height: 50px;
 }
 
+@media only screen and (max-width: 1536px) {
+  .hero .thumbnail .item {
+    width: 160px;
+    height: 200px;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 90%;
+  }
+  .hero .thumbnail {
+    left: 70%;
+    bottom: 40px;
+  }
+  .hero .thumbnail .item {
+    width: 150px;
+    height: 190px;
   }
   .featured .properties {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1048,6 +1099,16 @@ footer .logo {
   section {
     padding: 50px 8%;
   }
+
+  .hero .thumbnail {
+    bottom: 30px;
+  }
+
+  .hero .thumbnail .item {
+    width: 130px;
+    height: 170px;
+  }
+
   .about > div {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1081,6 +1142,15 @@ footer .logo {
     font-size: 2.2rem;
   }
 
+  .hero .thumbnail {
+    bottom: 20px;
+  }
+
+  .hero .thumbnail .item {
+    width: 120px;
+    height: 160px;
+  }
+
   .featured .properties {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1099,4 +1169,6 @@ footer .logo {
   }
 }
 
-
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}

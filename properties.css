@@ -165,6 +165,12 @@
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  #properties .hero .wrapper {
+    height: 300px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #properties .listings {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -177,6 +183,9 @@
   }
   #properties .listings .main .properties {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #properties .hero .wrapper {
+    height: 260px;
   }
 }
 
@@ -193,11 +202,16 @@
   #properties .listings .main .properties {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  #properties .hero .wrapper {
+    height: 240px;
+  }
 }
-
 
 @media only screen and (max-width: 600px) {
   #properties .listings .main .properties {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #properties .hero .wrapper {
+    height: 160px;
   }
 }

@@ -69,6 +69,8 @@
 
 #about #story img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #about #story .sec-heading {
@@ -115,4 +117,52 @@
 
 #about .members .item .info .role {
   color: var(--primary);
+}
+
+@media only screen and (max-width: 1280px) {
+  #about #story {
+    gap: 50px;
+  }
+
+  #about .members .item .picture {
+    height: 300px;
+  }
+
+  #about .hero .wrapper {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #about #story {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #about .members {
+    gap: 20px;
+  }
+
+  #about .members .item .picture {
+    height: 240px;
+  }
+  #about .hero .wrapper {
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about .members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #about .hero .wrapper {
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about .members .item .picture {
+    height: 200px;
+  }
+  #about .hero .wrapper {
+    height: 160px;
+  }
 }
