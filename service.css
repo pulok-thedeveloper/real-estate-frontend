@@ -148,8 +148,20 @@
   line-height: 1.8;
 }
 
+#service #experience .contact {
+  position: static;
+  height: auto;
+  background-color: #fff;
+  color: var(--black);
+}
+
 #service #experience .contact .wrapper {
   display: block;
+}
+
+#service #experience .contact .wrapper .contact-form {
+  background-color: #fff;
+  padding: 0;
 }
 
 #s-details {

@@ -46,3 +46,9 @@
 #contact .hero .breadcrumb i {
   font-size: 0.8rem;
 }
+
+#contact .contact{
+  position: static;
+  background-color: #fff;
+  color: var(--black);
+}
